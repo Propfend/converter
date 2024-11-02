@@ -13,12 +13,11 @@ use actix_web::{HttpResponse, HttpResponseBuilder, ResponseError};
 #[doc(no_inline)]
 pub use askama::*;
 
-/// Render a [`Template`] into a [`HttpResponse`], or render an error page.
 pub fn into_response<T: ?Sized + askama::Template>(tmpl: &T) -> HttpResponse<BoxBody> {
     try_into_response(tmpl).unwrap_or_else(|err| HttpResponse::from_error(ActixError(err)))
 }
 
-/// Try to render a [`Template`] into a [`HttpResponse`].
+
 pub fn try_into_response<T: ?Sized + askama::Template>(
     tmpl: &T,
 ) -> Result<HttpResponse<BoxBody>, Error> {
@@ -28,7 +27,7 @@ pub fn try_into_response<T: ?Sized + askama::Template>(
         .body(value))
 }
 
-/// Newtype to let askama::Error implement actix_web::ResponseError.
+
 struct ActixError(Error);
 
 impl fmt::Debug for ActixError {

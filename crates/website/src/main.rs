@@ -3,7 +3,7 @@ use actix_web::{App, HttpServer};
 
 use clap::{arg, Command};
 
-mod controller;
+mod main_router;
 
 const DEFAULT_SERVER_ADDRESS: &str = "127.0.0.1:8080";
 
@@ -20,8 +20,8 @@ fn cli_configuration() -> Command {
                     arg!(--addr <ADDR>)
                         .value_parser(clap::value_parser!(SocketAddr))
                         .default_value(DEFAULT_SERVER_ADDRESS),
-                )
-        )
+            )
+    )
 }
 
 async fn start_converter_server(
@@ -29,7 +29,7 @@ async fn start_converter_server(
 ) -> Result<()> {
     HttpServer::new(|| {
         App::new()
-        .configure(controller::register)
+        .configure(main_router::register)
     })
     .bind(server_address)?
     .run()

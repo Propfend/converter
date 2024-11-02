@@ -1,30 +1,12 @@
 use actix_files::NamedFile;
-use actix_web::{get, web, HttpResponse, Responder, Result};
-use tera::{Tera, Context};
+use actix_web::{get, web, Result};
 use std::path::PathBuf;
-use lazy_static::lazy_static;
 use askama::Template;
-
-const FAVICON: &[u8] = include_bytes!("../static/favicon.ico.png");
 
 #[derive(Template)]
 #[template(path = "index.html")]
 struct Product<'a> {
     name: &'a String,
-}
-
-lazy_static! {
-    pub static ref TEMPLATES: Tera = {
-        let mut tera = match Tera::new("examples/basic/templates/**/*") {
-            Ok(t) => t,
-            Err(e) => {
-                println!("Parsing error(s): {}", e);
-                ::std::process::exit(1);
-            }
-        };
-        tera.autoescape_on(vec![".html", ".sql"]);
-        tera
-    };
 }
 
 pub fn register(cfg: &mut web::ServiceConfig) {
