@@ -1,7 +1,6 @@
-use actix_files::NamedFile;
-use actix_web::{get, web, Result};
-use std::path::PathBuf;
+use actix_web::{get, web, HttpResponse};
 use askama::Template;
+use askama_resolver;
 
 #[derive(Template)]
 #[template(path = "index.html")]
@@ -14,13 +13,10 @@ pub fn register(cfg: &mut web::ServiceConfig) {
 }
 
 #[get("/")]
-async fn main_page() -> Result<NamedFile> {
+async fn main_page() -> HttpResponse {
     let product = Product { 
         name: &String::from("Miguel"), 
-    }; 
+    };
 
-    println!("{}", product.render().unwrap());
-    
-    let path: PathBuf = "../templates/index.html".parse().unwrap();
-    Ok(NamedFile::open(path)?)
-}
+    askama_resolver::into_response(&product)
+}   

@@ -27,7 +27,6 @@ pub fn try_into_response<T: ?Sized + askama::Template>(
         .body(value))
 }
 
-
 struct ActixError(Error);
 
 impl fmt::Debug for ActixError {

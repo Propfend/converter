@@ -1,9 +1,11 @@
 use std::{io::Result, net::SocketAddr};
 use actix_web::{App, HttpServer};
 
+
 use clap::{arg, Command};
 
 mod main_router;
+mod favicon_route;
 
 const DEFAULT_SERVER_ADDRESS: &str = "127.0.0.1:8080";
 
@@ -30,6 +32,7 @@ async fn start_converter_server(
     HttpServer::new(|| {
         App::new()
         .configure(main_router::register)
+        .configure(favicon_route::register)
     })
     .bind(server_address)?
     .run()
