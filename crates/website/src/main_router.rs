@@ -4,8 +4,8 @@ use askama_resolver;
 
 #[derive(Template)]
 #[template(path = "index.html")]
-struct Product<'a> {
-    name: &'a String,
+struct LlamaCppResponse<'a> {
+    token: &'a String,
 }
 
 pub fn register(cfg: &mut web::ServiceConfig) {
@@ -14,9 +14,9 @@ pub fn register(cfg: &mut web::ServiceConfig) {
 
 #[get("/")]
 async fn main_page() -> HttpResponse {
-    let product = Product { 
-        name: &String::from("Miguel"), 
+    let llamacpp_response = LlamaCppResponse { 
+        token: &String::from("Miguel"), 
     };
 
-    askama_resolver::into_response(&product)
+    askama_resolver::into_response(&llamacpp_response)
 }   
