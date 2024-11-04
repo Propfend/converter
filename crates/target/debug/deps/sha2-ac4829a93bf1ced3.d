@@ -1,0 +1,13 @@
+/home/debian/programming/rust/text-transformer/crates/target/debug/deps/libsha2-ac4829a93bf1ced3.rmeta: /home/debian/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.8/src/lib.rs /home/debian/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.8/src/core_api.rs /home/debian/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.8/src/sha256.rs /home/debian/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.8/src/sha512.rs /home/debian/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.8/src/consts.rs /home/debian/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.8/src/sha256/soft.rs /home/debian/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.8/src/sha256/x86.rs /home/debian/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.8/src/sha512/soft.rs /home/debian/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.8/src/sha512/x86.rs
+
+/home/debian/programming/rust/text-transformer/crates/target/debug/deps/sha2-ac4829a93bf1ced3.d: /home/debian/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.8/src/lib.rs /home/debian/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.8/src/core_api.rs /home/debian/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.8/src/sha256.rs /home/debian/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.8/src/sha512.rs /home/debian/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.8/src/consts.rs /home/debian/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.8/src/sha256/soft.rs /home/debian/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.8/src/sha256/x86.rs /home/debian/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.8/src/sha512/soft.rs /home/debian/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.8/src/sha512/x86.rs
+
+/home/debian/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.8/src/lib.rs:
+/home/debian/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.8/src/core_api.rs:
+/home/debian/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.8/src/sha256.rs:
+/home/debian/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.8/src/sha512.rs:
+/home/debian/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.8/src/consts.rs:
+/home/debian/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.8/src/sha256/soft.rs:
+/home/debian/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.8/src/sha256/x86.rs:
+/home/debian/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.8/src/sha512/soft.rs:
+/home/debian/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.10.8/src/sha512/x86.rs:
